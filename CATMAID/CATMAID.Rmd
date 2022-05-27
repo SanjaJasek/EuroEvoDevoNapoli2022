@@ -1,0 +1,249 @@
+---
+title: "Using CATMAID to explore the _Platynereis_ connectome"
+#subtitle: "EuroEvoDevo _Platynereis_ Satellite Workshop"  
+author: 
+  - "Sanja Jasek"
+date: '2022-05-30'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: false
+---
+
+class: with-logo logo-naomi
+
+layout: true
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+<style>
+.scrollable {
+  height: 60%;
+  overflow-y: auto;
+} 
+</style>
+
+<style>
+pre {
+  overflow-y: scroll !important;
+  max-height: 50vh !important;
+}
+</style>
+
+```{css, echo=FALSE}
+.with-logo::before {
+	content: '';
+	width: 110px;
+	height: 126px;
+	position: absolute;
+	top: 0.5em;
+	right: 0.5em;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.logo-naomi::before {
+	background-image: url(https://tuebingen.mpg.de/fileadmin/_processed_/e/0/csm_sigoldeins_5f44c6594e.jpg);
+}
+.logo-catmaid::before {
+	background-image: url(https://catmaid.readthedocs.io/en/stable/_static/catmaidlogo.png);
+}
+```
+
+
+
+## Naomi
+
+---
+
+.left-column[
+specimen HT-9-4
+
+72hpf _Platynereis_ larva
+]
+
+.center[<img src="./CATMAID_files/figure-html/Naomi_workflow.png" alt="Naomi workflow" height=500px>]
+
+<p style="position: absolute; bottom: 30px; leftt: 50px; font-size: 14px;">Shahidi, R, Williams, E. A., Conzelmann, M., <br>Asadulina, A., Verasztó C., Jasek, S., <br>Bezares-Calderón, L. A., Jékely, G. (2015) <br><b>A serial multiplex immunogold <br>labeling method for identifying <br>peptidergic neurons in connectomes</b><br><a href="https://doi.org/10.7554/eLife.11147">eLife 4:e11147<a/> </p>
+
+---
+
+.pull-left[immunolabeled layers]
+
+.center[<img src="./CATMAID_files/figure-html/Naomi_immuno_layers.png" alt="Naomi immuno layers" height=500px>]
+
+
+---
+
+#### Publications
+
+.scrollable[
+
+- [Shahidi, R, Williams, E. A., Conzelmann, M., Asadulina, A., Verasztó C., Jasek, S., Bezares-Calderón, L. A., Jékely, G. (2015) **A serial multiplex immunogold labeling method for identifying peptidergic neurons in connectomes** eLife 4:e11147](https://doi.org/10.7554/eLife.11147)
+
+- [Randel, N., Shahidi, R., Verasztó, C., Bezares-Calderón, L. A., Schmidt, S., Jékely, G. (2015) **Inter-individual stereotypy of the Platynereis larval visual connectome** eLife 4:e08069](https://doi.org/10.7554/eLife.08069)
+
+- [Williams, E. A., Verasztó, C., Jasek, S., Conzelmann, M., Shahidi, R., Bauknecht, P., Mirabeau, O., Jékely, G. (2017) **Synaptic and peptidergic connectome of a neurosecretory center in the annelid brain** eLife 6:e26349](https://doi.org/10.7554/eLife.26349)
+
+- [Verasztó, C., Ueda, N., Bezares-Calderón, L. A., Panzera, A., Williams, E. A., Shahidi, R., Jékely, G. (2017) **Ciliomotor circuitry underlying whole-body coordination of ciliary activity in the Platynereis larva** eLife 6:e26000](https://doi.org/10.7554/eLife.26000)
+
+- [Bezares-Calderón, L. A., Berger, J., Jasek, S., Verasztó, C., Mendes, S., Gühmann, M., Almeda, R., Shahidi, R., Jékely, G. (2018) **Neural circuitry of a polycystin-mediated hydrodynamic startle response for predator avoidance** eLife 7:e36262](https://doi.org/10.7554/eLife.36262)
+
+-  [Verasztó, C., Jasek, S., Gühmann, M., Shahidi, R., Ueda, N., Beard, J. D., Mendes, S., Heinz, K., Bezares-Calderón, L. A., Williams, E. A., Jékely, G. (2020) **Whole-animal connectome and cell-type complement of the three-segmented Platynereis dumerilii larva** bioRxiv 2020.08.21.260984](doi: https://doi.org/10.1101/2020.08.21.260984)
+
+- [Jasek, S., Verasztó, C., Brodrick, E., Shahidi, R., Kazimiers, T., Jékely, G. (2021) **Desmosomal connectomics of all somatic muscles in an annelid larva** bioRxiv 2021.06.09.447732](https://doi.org/10.1101/2021.06.09.447732)
+
+]
+
+---
+
+class: with-logo logo-catmaid
+
+layout: true
+
+## [CATMAID](https://catmaid.readthedocs.io/en/stable/)
+
+---
+
+[The **C**ollaborative **A**nnotation **T**oolkit for **M**assive **A**mounts of **I**mage **D**ata](https://catmaid.readthedocs.io/en/stable/)
+
+--
+
+#### Collaborative
+--
+
+- multiple people can work on it at the same time
+--
+
+- any change is automatically saved and immediately visible to others
+
+--
+
+#### Annotation Toolkit
+--
+
+- various types of annotations, including skeleton reconstructions, tags, synapses...
+
+--
+
+#### Massive Amounts of Image Data
+--
+
+- optimized for displaying large EM volumes
+
+---
+[The **C**ollaborative **A**nnotation **T**oolkit for **M**assive **A**mounts of **I**mage **D**ata](https://catmaid.readthedocs.io/en/stable/)
+
+### It's a web server *
+
+### _Platynereis_ catmaid: [catmaid.jekelylab.ex.ac.uk](https://catmaid.jekelylab.ex.ac.uk)
+
+
+.footnote[[\* Click here for more info about architecture](https://catmaid.readthedocs.io/en/stable/_images/architecture.svg)]
+
+---
+
+### Available types of labels
+
+- skeleton:   reconstruction of a cell, consists of nodes connected by edges
+- annotations:    labels associated with skeletons
+- tags:   labels associated with nodes
+- connectors:
+  - synapses
+  - desmosomes
+  - ...
+- volumes:    mesh volumes
+
+---
+
+### What we labeled in Naomi
+
+.scrollable[
+- skeleton reconstructions of all cells
+- annotations:
+  - cell types
+  - position (segment, body side...)
+  - morphology (ipsilateral, descending...)
+  - immunogold (directly in the dataset)
+  - gene expression inferred from other sources (e.g. WMISH)
+- tags:
+  - morphological structures (e.g. cilia), especially if they prompted a particular annotation to the cell
+  - immunogold particles
+- connectors:
+  - synapses
+  - desmosmes
+- volumes:
+  - outline
+  - yolk
+]
+
+---
+
+.center[<img src="https://catmaid.readthedocs.io/en/stable/_images/ui-tracing.jpg" alt="CATMAID user interface showing a typical tracing setup with graph, 3D viewer, plots and connectivity, by Schneider-Mizell and Stephan Gerhard et al." width=60%>]
+
+<p style="position: absolute; bottom: 26px; right: 50px; font-size: 14px;">CATMAID user interface <br>showing a typical tracing setup <br>with graph, 3D viewer, <br>plots and connectivity, <br>by Schneider-Mizell and <br>Stephan Gerhard et al.</p>
+
+---
+
+### API (application programming interface)
+
+Documentation: [catmaid.jekelylab.ex.ac.uk/apis/](https://jekelylab.ex.ac.uk)
+
+![API endpoint list](https://catmaid.readthedocs.io/en/stable/_images/api-docs.png)
+
+---
+class: with-logo logo-catmaid
+layout: true
+
+## CATMAID API
+
+---
+
+.center[<img src="https://catmaid.readthedocs.io/en/stable/_images/api-docs-endpoint.png" alt="API documentation" width=60%>]
+
+
+---
+
+```{bash eval=TRUE}
+curl -X POST "https://catmaid.jekelylab.ex.ac.uk/11/connectors/links/" \
+-H "X-Authorization: Token 20b2efa87c9f0c6f14db157d5c82b9b1bca9a91a" \
+-d "skeleton_ids=1634001&relation_type=desmosome_with&with_tags" \
+2>/dev/null | json_pp -json_opt pretty,canonical
+```
+
+---
+
+
+#### Libraries
+
+- [catpy](https://catpy.readthedocs.io/) (python, not maintained anymore)
+
+- [pymaid](https://pymaid.readthedocs.io/en/latest/) (python)
+
+- [natverse/rcatmaid](https://github.com/natverse/rcatmaid) (R)
+
+- [CATMAID-to-blender](https://github.com/schlegelp/CATMAID-to-Blender) (blender, not maintained anymore)
