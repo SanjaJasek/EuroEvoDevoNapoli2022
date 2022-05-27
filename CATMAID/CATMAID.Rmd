@@ -13,7 +13,33 @@ output:
       highlightLines: true
       ratio: 16:9
       countIncrementalSlides: false
+    seal: false
 ---
+
+class: inverse, center, title-slide, middle
+background-image: url('./CATMAID_files/figure-html/Naomi-connectome-slide-bg.png')
+background-size: cover
+
+<style>
+.title-slide .remark-slide-number {
+  display: none;
+}
+</style>
+
+# Using CATMAID to explore the _Platynereis_ connectome
+
+### Sanja Jasek
+
+### 30.5.2022
+
+
+.black[<a href="https://sanjajasek.github.io/EuroEvoDevoNapoli2022/" style="color:black">https://sanjajasek.github.io/EuroEvoDevoNapoli2022</a>]
+
+<img src="./CATMAID_files/figure-html/qr-euroevodevonapoli.png" alt="QR to https://sanjajasek.github.io/EuroEvoDevoNapoli2022/">
+
+
+---
+
 
 class: with-logo logo-naomi
 
