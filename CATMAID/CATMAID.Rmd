@@ -266,6 +266,7 @@ curl -X POST "https://catmaid.jekelylab.ex.ac.uk/11/connectors/links/" \
 
 #### Libraries
 
+.pull-left[
 - [catpy](https://catpy.readthedocs.io/) (python, not maintained anymore)
 
 - [pymaid](https://pymaid.readthedocs.io/en/latest/) (python)
@@ -273,3 +274,10 @@ curl -X POST "https://catmaid.jekelylab.ex.ac.uk/11/connectors/links/" \
 - [natverse/rcatmaid](https://github.com/natverse/rcatmaid) (R)
 
 - [CATMAID-to-blender](https://github.com/schlegelp/CATMAID-to-Blender) (blender, not maintained anymore)
+]
+
+.pull-right[
+[Veraszto et al. R code:](https://github.com/JekelyLab/Veraszto_et_al_2021_connectome)
+<br>
+![Veraszto connectome R code](./CATMAID_files/figure-html/qr-Veraszto-GitHub.png)
+]
