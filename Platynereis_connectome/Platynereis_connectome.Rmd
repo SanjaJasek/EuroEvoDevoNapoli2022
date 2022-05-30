@@ -1,0 +1,196 @@
+---
+title: "The Platynereis connectome"
+#subtitle: ""  
+author: 
+  - "Gaspar Jekely"
+  - "Sanja Jasek"
+date: '30.5.2022'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: false
+    seal: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+class: inverse, center, title-slide, middle
+background-image: url('./Platynereis_connectome_files/figure-html/Naomi-connectome-slide-bg.png')
+background-size: cover
+
+<style>
+.title-slide .remark-slide-number {
+  display: none;
+}
+</style>
+
+# The _Platynereis_ connectome
+
+### Sanja Jasek
+
+### 30.5.2022
+
+---
+
+## VolumeEM dataset of the three-day-old _Platynereis_
+
+.pull-left[
+![Naomi](./Platynereis_connectome_files/figure-html/larva_sections2.png)
+]
+
+.pull-right[
+![synapses](./Platynereis_connectome_files/figure-html/synapses-EM.png)
+]
+
+---
+
+## all neurons
+
+![All neurons](./Platynereis_connectome_files/figure-html/neurons-SN_IN_MN.png)
+---
+
+## all synapses
+
+![All synapses](./Platynereis_connectome_files/figure-html/all-synapses.png)
+---
+
+## effectors and full cell complement
+
+.center[
+![effectors, all cells](./Platynereis_connectome_files/figure-html/effectors-allcells.png)
+]
+
+
+
+---
+
+background-image: url('./Platynereis_connectome_files/figure-html/synaptic-connectome-modules.png')
+background-size: contain
+
+## full connectome
+
+---
+
+## sensory neurons
+
+.center[
+![sensory neurons](./Platynereis_connectome_files/figure-html/head-circuits-sensory.png)
+]
+
+---
+
+## mushroom body
+
+.center[
+![mushroom body](./Platynereis_connectome_files/figure-html/head-circuits-mushroom-body.png)
+]
+
+---
+
+## connectivity of mature MB neurons
+
+.center[
+![MB sankey](./Platynereis_connectome_files/figure-html/head-circuits-MB-sankey.png)
+]
+
+---
+
+## interneurons
+
+.center[
+![inter neurons](./Platynereis_connectome_files/figure-html/head-circuits-inter.png)
+]
+
+---
+
+## motor neurons
+
+.center[
+![motor neurons](./Platynereis_connectome_files/figure-html/head-circuits-motor.png)
+]
+ 
+---
+
+## motor neurons
+
+![STOP_GO circuit](./Platynereis_connectome_files/figure-html/STOP-GO-circuit.png)
+---
+
+## antler circuit
+
+![antler circuit](./Platynereis_connectome_files/figure-html/head-circuits-MNant.png)
+
+---
+
+## postural control circuit
+
+.center[
+![postural control circuit](./Platynereis_connectome_files/figure-html/head-circuits-postural-control.png)
+]
+
+---
+
+## eye circuit
+
+.center[
+![eye circuit](./Platynereis_connectome_files/figure-html/head-circuits-eyes.png)
+]
+
+---
+
+## connectivity between head regions
+
+.center[
+![head regions connectivity](./Platynereis_connectome_files/figure-html/head-circuits-regions-sankey.png)
+]
+
+---
+
+## acknowledgements
+
+.pull-left[
+### analysis
+- Gáspár Jékely
+- Csaba Verasztó
+- Sanja Jasek
+]
+
+.pull-right[
+### tracing and annotations
+- Csaba Verasztó
+- Gáspár Jékely
+- Sanja Jasek
+- Martin Gühmann
+- Réza Shahidi
+- Nobuo Ueda
+- James David Beard
+- Sara Mendes
+- Konrad Heinz
+- Luis Alberto Bezares-Calderón
+- Elizabeth Williams
+]
