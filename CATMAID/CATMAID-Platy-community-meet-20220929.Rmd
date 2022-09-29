@@ -289,7 +289,7 @@ name: api
 
 ```{bash eval=TRUE}
 curl -X POST "https://catmaid.jekelylab.ex.ac.uk/11/connectors/links/" \
--H "X-Authorization: Token 20b2efa87c9f0c6f14db157d5c82b9b1bca9a91a" \
+-H "X-Authorization: Token 3648a81f13c3264cb50fe74a15efe05ba91dbf0b" \
 -d "skeleton_ids=1634001&relation_type=desmosome_with&with_tags" \
 2>/dev/null | json_pp -json_opt pretty,canonical
 ```
