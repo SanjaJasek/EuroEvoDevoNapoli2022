@@ -269,7 +269,7 @@ name: user-interface
 
 ### API (application programming interface)
 
-Documentation: [catmaid.jekelylab.ex.ac.uk/apis/](catmaid.jekelylab.ex.ac.uk/apis/)
+Documentation: [catmaid.jekelylab.ex.ac.uk/apis/](https://catmaid.jekelylab.ex.ac.uk/apis/)
 
 ![API endpoint list](https://catmaid.readthedocs.io/en/stable/_images/api-docs.png)
 
