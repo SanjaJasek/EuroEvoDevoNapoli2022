@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Using CATMAID to explore the Platynereis connectome</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Sanja Jasek" />
+    <meta name="date" content="2022-09-29" />
+    <script src="CATMAID-Platy-community-meet-20220929_files/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: inverse, center, title-slide, middle
+background-image: url('./CATMAID_files/figure-html/Naomi-connectome-slide-bg.png')
+background-size: cover
+
+&lt;style&gt;
+.title-slide .remark-slide-number {
+  display: none;
+}
+&lt;/style&gt;
+
+# Using CATMAID to explore the _Platynereis_ connectome
+
+### Sanja Jasek
+
+### _Platynereis_ community meeting 29.9.2022
+
+.black[&lt;a href="https://sanjajasek.github.io/EuroEvoDevoNapoli2022/CATMAID-Platy-community-meet-20220929.html" style="color:black"&gt;https://sanjajasek.github.io/EuroEvoDevoNapoli2022/CATMAID-Platy-community-meet-20220929.html&lt;/a&gt;]
+
+&lt;img src="./CATMAID-Platy-community-meet-20220929_files/figure-html/qr-Platy-community-meet.png" alt="QR to https://sanjajasek.github.io/EuroEvoDevoNapoli2022/CATMAID-Platy-community-meet-20220929.html"&gt;
+
+
+---
+
+
+class: with-logo logo-naomi
+
+layout: true
+
+
+
+
+
+&lt;style&gt;
+.scrollable {
+  height: 60%;
+  overflow-y: auto;
+} 
+&lt;/style&gt;
+
+&lt;style&gt;
+pre {
+  overflow-y: scroll !important;
+  max-height: 50vh !important;
+}
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+.with-logo::before {
+	content: '';
+	width: 110px;
+	height: 126px;
+	position: absolute;
+	top: 0.5em;
+	right: 0.5em;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.logo-naomi::before {
+	background-image: url(https://tuebingen.mpg.de/fileadmin/_processed_/e/0/csm_sigoldeins_5f44c6594e.jpg);
+}
+.logo-catmaid::before {
+	background-image: url(https://catmaid.readthedocs.io/en/stable/_static/catmaidlogo.png);
+}
+&lt;/style&gt;
+
+
+---
+
+## Naomi
+
+.left-column[
+specimen HT-9-4
+
+72hpf _Platynereis_ larva
+]
+
+.center[&lt;img src="./CATMAID_files/figure-html/Naomi_workflow.png" alt="Naomi workflow" height=500px&gt;]
+
+&lt;p style="position: absolute; bottom: 30px; leftt: 50px; font-size: 14px;"&gt;Shahidi, R, Williams, E. A., Conzelmann, M., &lt;br&gt;Asadulina, A., Verasztó C., Jasek, S., &lt;br&gt;Bezares-Calderón, L. A., Jékely, G. (2015) &lt;br&gt;&lt;b&gt;A serial multiplex immunogold &lt;br&gt;labeling method for identifying &lt;br&gt;peptidergic neurons in connectomes&lt;/b&gt;&lt;br&gt;&lt;a href="https://doi.org/10.7554/eLife.11147"&gt;eLife 4:e11147&lt;a/&gt; &lt;/p&gt;
+
+---
+
+## Naomi
+
+.pull-left[immunolabeled layers]
+
+.center[&lt;img src="./CATMAID_files/figure-html/Naomi_immuno_layers.png" alt="Naomi immuno layers" height=500px&gt;]
+
+---
+
+## synaptic connectome - all neurons
+
+![All neurons](https://sanjajasek.github.io/EuroEvoDevoNapoli2022/Platynereis_connectome/Platynereis_connectome_files/figure-html/neurons-SN_IN_MN.png)
+---
+
+## synaptic connectome - all synapses
+
+![All synapses](https://sanjajasek.github.io/EuroEvoDevoNapoli2022/Platynereis_connectome/Platynereis_connectome_files/figure-html/all-synapses.png)
+
+---
+
+background-image: url('https://sanjajasek.github.io/EuroEvoDevoNapoli2022/Platynereis_connectome/Platynereis_connectome_files/figure-html/synaptic-connectome-modules.png')
+background-size: contain
+
+## synaptic
+## connectome
+
+---
+
+## desmosome connectome
+
+.center[&lt;img src="https://raw.githubusercontent.com/JekelyLab/Jasek_et_al/main/figures/Figure1.png"
+     height="540px"&gt;]
+     
+---
+
+## Naomi
+
+#### Publications
+
+.scrollable[
+
+- [Shahidi, R, Williams, E. A., Conzelmann, M., Asadulina, A., Verasztó C., Jasek, S., Bezares-Calderón, L. A., Jékely, G. (2015) **A serial multiplex immunogold labeling method for identifying peptidergic neurons in connectomes** eLife 4:e11147](https://doi.org/10.7554/eLife.11147)
+
+- [Randel, N., Shahidi, R., Verasztó, C., Bezares-Calderón, L. A., Schmidt, S., Jékely, G. (2015) **Inter-individual stereotypy of the Platynereis larval visual connectome** eLife 4:e08069](https://doi.org/10.7554/eLife.08069)
+
+- [Williams, E. A., Verasztó, C., Jasek, S., Conzelmann, M., Shahidi, R., Bauknecht, P., Mirabeau, O., Jékely, G. (2017) **Synaptic and peptidergic connectome of a neurosecretory center in the annelid brain** eLife 6:e26349](https://doi.org/10.7554/eLife.26349)
+
+- [Verasztó, C., Ueda, N., Bezares-Calderón, L. A., Panzera, A., Williams, E. A., Shahidi, R., Jékely, G. (2017) **Ciliomotor circuitry underlying whole-body coordination of ciliary activity in the Platynereis larva** eLife 6:e26000](https://doi.org/10.7554/eLife.26000)
+
+- [Bezares-Calderón, L. A., Berger, J., Jasek, S., Verasztó, C., Mendes, S., Gühmann, M., Almeda, R., Shahidi, R., Jékely, G. (2018) **Neural circuitry of a polycystin-mediated hydrodynamic startle response for predator avoidance** eLife 7:e36262](https://doi.org/10.7554/eLife.36262)
+
+- [Verasztó, C., Gühmann, M., Jia, H., Rajan, V. B. V., Bezares-Calderón, L. A., Piñeiro-Lopez, C., , Randel, N., Shahidi, R., Michiels, N. K., Yokoyama, S., Tessmar-Raible, K., Jékely, G. (2018) **Ciliary and rhabdomeric photoreceptor-cell circuits form a spectral depth gauge in marine zooplankton**  eLife 7:e36440](https://doi.org/10.7554/eLife.36440)
+
+- [Williams, E A., Jékely, G. (2019) **Neuronal cell types in the annelid Platynereis dumerilii**  Current Opinion in Neurobiology, 56, 106–116.](https://doi.org/10.1016/j.conb.2018.12.008)
+
+-  [Verasztó, C., Jasek, S., Gühmann, M., Shahidi, R., Ueda, N., Beard, J. D., Mendes, S., Heinz, K., Bezares-Calderón, L. A., Williams, E. A., Jékely, G. (2020) **Whole-animal connectome and cell-type complement of the three-segmented Platynereis dumerilii larva** bioRxiv 2020.08.21.260984](doi: https://doi.org/10.1101/2020.08.21.260984)
+
+- [Jasek, S., Verasztó, C., Brodrick, E., Shahidi, R., Kazimiers, T., Jékely, G. (2021) **Desmosomal connectomics of all somatic muscles in an annelid larva** bioRxiv 2021.06.09.447732](https://doi.org/10.1101/2021.06.09.447732)
+
+]
+
+---
+
+class: with-logo logo-catmaid
+
+layout: true
+
+## [CATMAID](https://catmaid.readthedocs.io/en/stable/)
+
+---
+
+[The **C**ollaborative **A**nnotation **T**oolkit for **M**assive **A**mounts of **I**mage **D**ata](https://catmaid.readthedocs.io/en/stable/)
+
+
+
+#### Collaborative
+
+
+- multiple people can work on it at the same time
+
+
+- any change is automatically saved and immediately visible to others
+
+
+
+#### Annotation Toolkit
+
+
+- various types of annotations, including skeleton reconstructions, tags, synapses...
+
+
+
+#### Massive Amounts of Image Data
+
+- optimized for displaying large EM volumes
+
+---
+[The **C**ollaborative **A**nnotation **T**oolkit for **M**assive **A**mounts of **I**mage **D**ata](https://catmaid.readthedocs.io/en/stable/)
+
+### It's a web server *
+
+### _Platynereis_ catmaid: [catmaid.jekelylab.ex.ac.uk](https://catmaid.jekelylab.ex.ac.uk)
+
+
+.footnote[[\* Click here for more info about architecture](https://catmaid.readthedocs.io/en/stable/_images/architecture.svg)]
+
+---
+
+### Available types of labels
+
+- skeleton:   reconstruction of a cell, consists of nodes connected by edges
+- annotations:    labels associated with skeletons
+- tags:   labels associated with nodes
+- connectors:
+  - synapses
+  - desmosomes
+  - ...
+- volumes:    mesh volumes
+
+---
+
+### What we labeled in Naomi
+
+.scrollable[
+- skeleton reconstructions of all cells
+- annotations:
+  - cell types
+  - position (segment, body side...)
+  - morphology (ipsilateral, descending...)
+  - immunogold (directly in the dataset)
+  - gene expression inferred from other sources (e.g. WMISH) (expression:gene name:evidence:source DOI)
+- tags:
+  - morphological structures (e.g. cilia), especially if they prompted a particular annotation to the cell
+  - immunogold particles
+- connectors:
+  - synapses
+  - desmosomes
+- volumes:
+  - outline
+  - yolk
+]
+
+---
+
+name: user-interface
+
+.center[&lt;img src="https://catmaid.readthedocs.io/en/stable/_images/ui-tracing.jpg" alt="CATMAID user interface showing a typical tracing setup with graph, 3D viewer, plots and connectivity, by Schneider-Mizell and Stephan Gerhard et al." width=60%&gt;]
+
+&lt;p style="position: absolute; bottom: 26px; right: 50px; font-size: 14px;"&gt;CATMAID user interface &lt;br&gt;showing a typical tracing setup &lt;br&gt;with graph, 3D viewer, &lt;br&gt;plots and connectivity, &lt;br&gt;by Schneider-Mizell and &lt;br&gt;Stephan Gerhard et al.&lt;/p&gt;
+
+---
+
+### API (application programming interface)
+
+Documentation: [catmaid.jekelylab.ex.ac.uk/apis/](https://jekelylab.ex.ac.uk)
+
+![API endpoint list](https://catmaid.readthedocs.io/en/stable/_images/api-docs.png)
+
+---
+class: with-logo logo-catmaid
+layout: true
+name: api
+
+## CATMAID API
+
+---
+
+.center[&lt;img src="https://catmaid.readthedocs.io/en/stable/_images/api-docs-endpoint.png" alt="API documentation" width=60%&gt;]
+
+
+---
+
+
+```bash
+curl -X POST "https://catmaid.jekelylab.ex.ac.uk/11/connectors/links/" \
+-H "X-Authorization: Token 20b2efa87c9f0c6f14db157d5c82b9b1bca9a91a" \
+-d "skeleton_ids=1634001&amp;relation_type=desmosome_with&amp;with_tags" \
+2&gt;/dev/null | json_pp -json_opt pretty,canonical
+```
+
+```
+## {
+##    "links" : [
+##       [
+##          1634001,
+##          6645502,
+##          70838.35,
+##          102334.15,
+##          96000,
+##          5,
+##          16,
+##          5344191,
+##          "2018-11-27T15:18:27.486875+00:00",
+##          "2018-11-27T15:18:27.486883+00:00"
+##       ],
+##       [
+##          1634001,
+##          6648664,
+##          97340.85,
+##          69914.24,
+##          116640,
+##          5,
+##          16,
+##          5344562,
+##          "2018-11-28T20:47:29.143542+00:00",
+##          "2018-11-28T20:47:29.143555+00:00"
+##       ],
+##       [
+##          1634001,
+##          6648666,
+##          97004.55,
+##          69902.836,
+##          116360,
+##          5,
+##          16,
+##          5344549,
+##          "2018-11-28T20:47:48.078504+00:00",
+##          "2018-11-28T20:47:48.078516+00:00"
+##       ],
+##       [
+##          1634001,
+##          6648667,
+##          96702.45,
+##          69999.74,
+##          116360,
+##          5,
+##          16,
+##          5344549,
+##          "2018-11-28T20:47:51.035276+00:00",
+##          "2018-11-28T20:47:51.035290+00:00"
+##       ],
+##       [
+##          1634001,
+##          6648670,
+##          96787.95,
+##          70022.54,
+##          115000,
+##          5,
+##          16,
+##          5344493,
+##          "2018-11-28T20:48:15.557149+00:00",
+##          "2018-11-28T20:48:15.557163+00:00"
+##       ],
+##       [
+##          1634001,
+##          6724716,
+##          97757.7,
+##          73103.95,
+##          115960,
+##          5,
+##          16,
+##          6724715,
+##          "2019-02-25T14:32:13.865482+00:00",
+##          "2019-02-25T14:32:35.867916+00:00"
+##       ],
+##       [
+##          1634001,
+##          6724874,
+##          96918.9,
+##          70034.15,
+##          116240,
+##          5,
+##          16,
+##          5344546,
+##          "2019-02-25T15:21:47.173361+00:00",
+##          "2019-02-25T15:21:47.173375+00:00"
+##       ],
+##       [
+##          1634001,
+##          6846627,
+##          72063.1,
+##          102906.3,
+##          96560,
+##          5,
+##          16,
+##          5344172,
+##          "2019-11-26T15:16:53.823283+00:00",
+##          "2019-11-26T15:16:53.823291+00:00"
+##       ],
+##       [
+##          1634001,
+##          6846649,
+##          69771.7,
+##          101982.9,
+##          95080,
+##          5,
+##          16,
+##          5344219,
+##          "2019-11-26T15:18:43.156672+00:00",
+##          "2019-11-26T15:18:43.156680+00:00"
+##       ],
+##       [
+##          1634001,
+##          6853363,
+##          96204.5,
+##          69668.35,
+##          115960,
+##          5,
+##          16,
+##          5344532,
+##          "2019-12-11T17:50:33.065109+00:00",
+##          "2019-12-11T17:50:33.065117+00:00"
+##       ],
+##       [
+##          1634001,
+##          6870264,
+##          96143.85,
+##          68665.85,
+##          116920,
+##          5,
+##          16,
+##          6870263,
+##          "2020-01-22T12:58:23.577863+00:00",
+##          "2020-01-22T12:58:23.577870+00:00"
+##       ],
+##       [
+##          1634001,
+##          6870298,
+##          96363.25,
+##          69820.05,
+##          116520,
+##          5,
+##          16,
+##          5344559,
+##          "2020-01-22T13:00:02.237835+00:00",
+##          "2020-01-22T13:00:02.237843+00:00"
+##       ],
+##       [
+##          1634001,
+##          6870300,
+##          96112.45,
+##          69079.05,
+##          115440,
+##          5,
+##          16,
+##          5344508,
+##          "2020-01-22T13:00:20.434061+00:00",
+##          "2020-01-22T13:00:20.434068+00:00"
+##       ],
+##       [
+##          1634001,
+##          6870315,
+##          97101.45,
+##          69925.55,
+##          115520,
+##          5,
+##          16,
+##          6870314,
+##          "2020-01-22T13:01:11.036850+00:00",
+##          "2020-01-22T13:01:11.036859+00:00"
+##       ],
+##       [
+##          1634001,
+##          6870316,
+##          97346.55,
+##          70045.25,
+##          115520,
+##          5,
+##          16,
+##          6870314,
+##          "2020-01-22T13:01:13.542762+00:00",
+##          "2020-01-22T13:01:13.542768+00:00"
+##       ]
+##    ],
+##    "tags" : {}
+## }
+```
+
+---
+
+name: libraries
+
+#### Libraries
+
+.pull-left[
+- [catpy](https://catpy.readthedocs.io/) (python, not maintained anymore)
+
+- [navis/pymaid](https://pymaid.readthedocs.io/en/latest/) (python)
+
+- [natverse/rcatmaid](https://github.com/natverse/rcatmaid) (R)
+
+- [CATMAID-to-blender](https://github.com/schlegelp/CATMAID-to-Blender) (blender, not maintained anymore)
+]
+
+.pull-right[
+[Synaptic connectome R code](https://github.com/JekelyLab/Veraszto_et_al_2021_connectome)
+&lt;br&gt;
+![Synaptic connectome R code](./CATMAID_files/figure-html/qr-Veraszto-GitHub.png)
+&lt;br&gt;
+[Desmosome connectome R code](https://github.com/JekelyLab/Jasek_et_al)
+&lt;br&gt;
+![Desmosome connectome R code](./CATMAID-Platy-community-meet-20220929_files/figure-html/qr-Jasek-GitHub.png)
+
+]
+
+---
+
+layout: false
+
+## Tool comparison (not comprehensive)
+
+.pull-left[
+#### web-based
+examples: [CATMAID](https://catmaid.org), [webKnossos](https://webknossos.org/)
+- can handle bigger amounts of data
+- complicated set up, you might need to outsource
+- collaborative
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+#### hybrid
+examples: [MoBIE](https://mobie.github.io/) (platybrowser)
+- actual data is stored on a server, but you need to install specialized software on your computer to view it
+]
+
+.pull-right[
+#### desktop apps
+examples: [TrakEM2](https://www.ini.uzh.ch/~acardona/trakem2.html), [Amira](https://www.thermofisher.com/uk/en/home/electron-microscopy/products/software-em-3d-vis/amira-software.html), [Imaris](https://imaris.oxinst.com/)
+- easy to set up and work with
+- you might not be able to open big datasets on your computer
+- harder to collaborate
+]
+
+---
+
+## Tool comparison (not comprehensive)
+
+.pull-left[
+#### [CATMAID](https://catmaid.org)
+- no image processing capabilities (you need to do it with a different tool, like TrakEM2)
+- only experimental support for volume visualization
+- very easy to collaborate
+- good [API](#api)
+- many [in-built neuron and network analysis tools](#user-interface)
+- more and better [libraries](#libraries)
+- rich [ecosystem](https://www.itanna.io/ecosystem.html) (mostly for _Drosophila_)
+]
+
+.pull-right[
+#### [webKnossos](https://webknossos.org/)
+- excellent accompanying image processing tools (alignment, segmentation, etc.)
+- excellent volume visualization
+- harder to collaborate
+- good API
+- limited analysis tools, no network analysis
+- limited libraries
+]
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
